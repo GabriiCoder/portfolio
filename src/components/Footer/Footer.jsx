@@ -8,7 +8,6 @@ const Footer = () => {
         <div className={styles.socials}>
           <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
           <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>GitHub</a>
-          <a href="https://twitter.com/tu-usuario" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Twitter</a>
         </div>
       </div>
     </footer>
