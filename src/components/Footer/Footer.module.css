@@ -1,0 +1,34 @@
+
+.footer {
+    background-color: var(--color-secondary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .socials {
+    margin-top: 0.5rem;
+  }
+  
+  .socialLink {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-family: var(--font-primary);
+  }
+  
+  .socialLink:hover {
+    color: var(--color-accent);
+  }

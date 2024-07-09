@@ -1,0 +1,46 @@
+
+.header {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: var(--font-secondary);
+}
+
+.logo p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navList li {
+  margin-right: 1rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+}
