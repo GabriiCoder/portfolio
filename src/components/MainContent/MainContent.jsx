@@ -1,15 +1,24 @@
 import React from 'react';
 import styles from './MainContent.module.css';
+import { useEffect } from 'react';
 
 const MainContent = () => {
+  useEffect(() => {
+    const nameElement = document.querySelector(`.${styles.name}`);
+    const descElement = document.querySelector(`.${styles.description}`);
+    nameElement.classList.add(styles.show);
+    setTimeout(() => {
+      descElement.classList.add(styles.show);
+    }, 2000);
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.content}>
-        <img src="images/Likedlin.png" alt="Foto de Gabriela" className={styles.photo} />
-        <div className={styles.text}>
-          <h2>¡Hola, soy Gabriela!</h2>
-          <p>Soy una desarrolladora web full stack con una pasión insaciable por la tecnología y la innovación. Cada día me motiva aprender nuevas tecnologías y explorar el fascinante mundo de la ciberseguridad. Creo firmemente en la importancia de crear soluciones eficientes, seguras y accesibles. Mi objetivo es seguir creciendo profesionalmente, enfrentando nuevos desafíos que me permitan mejorar mis habilidades y contribuir significativamente a la industria tecnológica.</p>
-        </div>
+        <h1 className={styles.name}>Gabriela</h1>
+        <p className={styles.description}>
+          Desarrolladora web full stack apasionada por la tecnología y la ciberseguridad. Siempre en busca de nuevos desafíos y oportunidades para aprender.
+        </p>
       </div>
       <div className={styles.neurons}></div>
     </main>
