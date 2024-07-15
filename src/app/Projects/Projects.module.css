@@ -1,0 +1,13 @@
+.projects {
+    text-align: center;
+  }
+  
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .pagination {
+    margin-top: 1rem;
+  }

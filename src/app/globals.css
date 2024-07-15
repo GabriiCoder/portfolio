@@ -1,43 +1,30 @@
-:root {
-  --color-primary: #4CAF50;
-  --color-secondary: #2C3E50;
-  --color-accent: #FFC107;
-  --color-background: #F9F9F9;
-  --color-text: #333333;
-  
-  --font-primary: 'Roboto', sans-serif;
-  --font-secondary: 'Merriweather', serif;
-}
+@import '@fontsource/ribeye-marrow';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --background-color: #121212;
+  --primary-color: #ff4081;
+  --secondary-color: #303f9f;
+  --font-primary: 'Ribeye Marrow', cursive;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: var(--font-primary);
-  background-color: var(--color-background);
-  color: var(--color-text);
-  line-height: 1.6;
+  background-color: var(--background-color);
+  color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
-  color: var(--color-secondary);
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
 }
 
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-accent);
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

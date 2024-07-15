@@ -1,0 +1,18 @@
+.adminButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .adminButton a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .adminButton:hover {
+    opacity: 1;
+  }

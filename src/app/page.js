@@ -1,19 +1,21 @@
-"use client"
-import React from 'react';
-import Header from '../components/Header/Header.jsx';
-import Footer from '../components/Footer/Footer.jsx';
-import MainContent from '@/components/MainContent/MainContent.jsx';
+import React from 'react'
+import styles from './Home.module.css'
 
-export default function Home() {
+export default function HomePage() {
+  const name = "Gabriela";
+  
   return (
-    <div>
-      <Header />
-        <title>Portafolio de [Gabriela]</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" />
-      <main>
-        <MainContent/>
-      </main>
-      <Footer />
-    </div>
+    <main className={styles.main}>
+      <div className={styles.hero}>
+        <h1 className={styles.heroTitle}>
+          {name.split('').map((letter, index) => (
+            <span key={index} className={styles.letter}>{letter}</span>
+          ))}
+        </h1>
+        <p className={styles.heroSubtitle}>
+          Desarrolladora Web Fullstack con motivación por seguir aprendiendo para mejorar cada día como programadora.
+        </p>
+      </div>
+    </main>
   );
 }

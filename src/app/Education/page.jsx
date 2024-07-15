@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-export default function page() {
+export default function EducationPage() {
   return (
-    <div>
-      Educación
-    </div>
-  )
+    <main>
+      <h1>Education & Experience</h1>
+      <p>Your educational and professional background.</p>
+    </main>
+  );
 }

@@ -1,0 +1,18 @@
+.slider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prev, .next {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #005bb5;
+  }
